@@ -1,0 +1,74 @@
+
+/*margin and padding can be taken out in the body if you like it better*/
+
+body {
+  background: rgb(200, 197, 197);
+  color: rgb(229, 229, 229);
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+#clock{
+  background: rgb(227, 22, 22);
+  color: rgb(216, 214, 214);
+}
+header {
+  background: rgb(227, 22, 22);
+  padding: 25px;
+}
+h1 {
+  color: rgb(216, 214, 214);
+}
+section {
+  background: rgb(177, 162, 162);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+div {
+  background: white;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  margin: 5px;
+
+}
+a {
+  text-decoration: none;
+  color: #0070c9;
+}
+.para{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+.href{
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.product, .offer {
+display: flex;
+flex-shrink: 100;
+flex-direction: row;
+padding: 10px;
+margin: 10;
+color: white;
+background-color: rgb(227, 22, 22);
+width:auto;
+}
+footer {
+  background: rgb(227, 22, 22);
+  padding: 15px;
+}
