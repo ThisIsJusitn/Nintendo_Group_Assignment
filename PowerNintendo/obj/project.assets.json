@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Documents\\Fall 2023 School\\HTML, CSS, JS Fund - 1002\\Nintendo_Group_Assignment\\PowerNintendo\\PowerNintendo.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Documents\\Clones\\Nintendo_Group_Assignment-1\\PowerNintendo\\PowerNintendo.csproj",
       "projectName": "PowerNintendo",
-      "projectPath": "C:\\Users\\justi\\OneDrive\\Documents\\Fall 2023 School\\HTML, CSS, JS Fund - 1002\\Nintendo_Group_Assignment\\PowerNintendo\\PowerNintendo.csproj",
+      "projectPath": "C:\\Users\\justi\\OneDrive\\Documents\\Clones\\Nintendo_Group_Assignment-1\\PowerNintendo\\PowerNintendo.csproj",
       "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justi\\OneDrive\\Documents\\Fall 2023 School\\HTML, CSS, JS Fund - 1002\\Nintendo_Group_Assignment\\PowerNintendo\\obj\\",
+      "outputPath": "C:\\Users\\justi\\OneDrive\\Documents\\Clones\\Nintendo_Group_Assignment-1\\PowerNintendo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config"

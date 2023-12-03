@@ -1,42 +1,102 @@
-
-/*margin and padding can be taken out in the body if you like it better*/
+/* styles.css */
 
 body {
-    background: rgb(200, 197, 197);
-    color: rgb(229, 229, 229);
-    font-family: Arial, Helvetica, sans-serif;
+  background: rgb(255, 255, 255);
+  color: rgb(44, 62, 80);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background: rgb(227, 22, 22);
-    padding: 25px;
-  }
-  h1 {
-    color: rgb(216, 214, 214);
-  }
-  section {
-    background: rgb(177, 162, 162);
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-  }
-  div {
-    background: rgb(224, 255, 255);
-    margin: auto;
-    width: 100px;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-    margin: 5px;
-  }
-  footer {
-    background: rgb(227, 22, 22);
-    padding: 15px;
-  }
+header {
+  background: rgb(227, 22, 22);
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(227, 22, 22);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgb(255, 60, 60);
+}
+
+h1 {
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-section, .info-section, .glow-star-section {
+  background: rgb(223, 218, 218);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+
+.red-text-background {
+  background-color: rgb(227, 22, 22);
+  padding: 20px;
+  border-radius: 40px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.red-text {
+  color: white;
+}
+
+footer {
+  background: rgb(227, 22, 22);
+  padding: 15px;
+  text-align: center;
+}
+
+.glow-star-section {
+  display: flex;
+  align-items: flex-end;
+}
+
+.glow-power-star {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
