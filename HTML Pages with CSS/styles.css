@@ -17,12 +17,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 125px;
 }
 
 .logo {
   max-width: 100%;
   height: auto;
-  width: 150px;
+  width: 500px;
 }
 
 nav ul {
@@ -62,8 +63,8 @@ section {
   align-items: center;
 }
 
-.welcome-section, .info-section, .glow-star-section {
-  background: rgb(223, 218, 218);
+.welcome-section, .info-section {
+  background: rgb(255, 255, 255);
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -81,6 +82,15 @@ section {
   margin: auto;
 }
 
+.red-text-background a {
+  color: white;
+  text-decoration: underline;
+}
+
+.red-text-background a:hover {
+  color: #ffc107; /* Change the color on hover if needed */
+}
+
 .red-text {
   color: white;
 }
@@ -89,14 +99,4 @@ footer {
   background: rgb(227, 22, 22);
   padding: 15px;
   text-align: center;
-}
-
-.glow-star-section {
-  display: flex;
-  align-items: flex-end;
-}
-
-.glow-power-star {
-  width: 100px; /* Adjust the width as needed */
-  height: auto;
 }
