@@ -1,9 +1,7 @@
-/* styles.css */
-
+/* Apply background image to the body */
 body {
-  background: rgb(255, 255, 255);
-  color: rgb(44, 62, 80);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('Images/StarPower.png') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,6 +9,7 @@ body {
   min-height: 100vh;
 }
 
+/* Style for the header section */
 header {
   background: rgb(227, 22, 22);
   padding: 10px 25px;
@@ -20,51 +19,77 @@ header {
   height: 125px;
 }
 
+/* Responsive logo style */
 .logo {
   max-width: 100%;
   height: auto;
   width: 500px;
 }
 
+/* Style for the navigation menu */
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative; /* Make the nav a positioned container */
+  z-index: 2; /* Ensure the nav is above the background image */
 }
 
+/* Style for navigation list items */
 nav li {
   display: inline-block;
   margin: 0 10px;
 }
 
+/* Style for navigation links */
 nav a {
   text-decoration: none;
   padding: 10px 20px;
   color: white;
-  background-color: rgb(227, 22, 22);
-  border-radius: 5px;
   transition: background-color 0.3s ease;
+  border-radius: 10px; /* Round the corners */
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
   background-color: rgb(255, 60, 60);
 }
 
+/* Style for the main title */
 h1 {
   color: white;
   font-size: 2.5em;
   margin: 0;
+  z-index: 1; /* Place above the background image */
 }
 
+/* Style for the main content section */
 section {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative; /* Make the section a positioned container */
+  z-index: 1; /* Ensure the section is above the background image */
 }
 
-.welcome-section, .info-section {
-  background: rgb(255, 255, 255);
+/* Move the background styles to the section class */
+section.welcome-section::before,
+footer::before {
+  content: '';
+  background: url('Images/StarPower.png') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+/* Style for welcome and info sections */
+.welcome-section,
+.info-section {
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -73,6 +98,7 @@ section {
   margin: auto;
 }
 
+/* Style for a red-text background */
 .red-text-background {
   background-color: rgb(227, 22, 22);
   padding: 20px;
@@ -82,21 +108,53 @@ section {
   margin: auto;
 }
 
+/* Style for links within the red-text background */
 .red-text-background a {
   color: white;
   text-decoration: underline;
 }
 
+/* Hover effect for links within the red-text background */
 .red-text-background a:hover {
   color: #ffc107; /* Change the color on hover if needed */
 }
 
+/* Style for red text */
 .red-text {
   color: white;
 }
 
+/* Style for the footer section */
 footer {
   background: rgb(227, 22, 22);
   padding: 15px;
   text-align: center;
+  position: relative; /* Make the footer a positioned container */
+}
+
+/* Move the background styles to the footer class */
+footer::before {
+  content: '';
+  background: url('Images/StarPower.png') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+/* Style for the wrapper class */
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-95%, -50%);
+}
+
+/* Style for images within the wrapper */
+.wrapper img {
+  max-width: 200%;
+  height: auto;
 }
