@@ -1,0 +1,145 @@
+
+/*margin and padding can be taken out in the body if you like it better*/
+
+#clock {
+    background: rgb(227, 22, 22);
+    color: white;
+  }
+
+  /* Style for the navigation menu */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative; /* Make the nav a positioned container */
+  z-index: 2; /* Ensure the nav is above the background image */
+}
+
+/* Style for navigation list items */
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Style for navigation links */
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 10px; /* Round the corners */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+  background-color: rgb(255, 60, 60);
+}
+  
+  body {
+      background: rgb(200, 197, 197);
+      color: rgb(33, 30, 30);
+      font-family: Arial, Helvetica, sans-serif;
+  
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: rgb(227, 22, 22);
+      padding: 25px;
+    }
+    h1 {
+      color: rgb(216, 214, 214);
+    }
+    section {
+      background: rgb(177, 162, 162);
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .section.section-secondary{
+      background:#efefef; 
+  }
+  
+  /* 
+  about
+   */
+   .about{
+    margin:0;
+    display: flex;
+  }
+  /* .about-image{} */
+  .about-caption{
+    padding-left: 15px;
+  }
+  .about-headline{
+    margin: 0 0 20px;
+    font-size: 30px;
+  }
+  .about-description{
+    font-style: italic;
+    font-size: 25px;
+    margin: 12px;
+  }
+    div {
+      background: rgb(224, 255, 255);
+      margin: auto;
+      width: 100px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      margin: 5px;
+    }
+    footer {
+      background: rgb(227, 22, 22);
+      padding: 15px;
+    }
+  
+    
+    .section-headline{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color:#333;
+      margin: 0 0 20px;
+  }
+  
+   .form-table{
+      margin: 0 auto;
+  }
+  /* .form-table tr{} */
+  .form-table th{
+      padding: 10px;
+      text-align: left;
+  }
+  .form-table td{
+      padding: 10px;
+  }
+  .form-button{
+      margin-top: 20px;
+      text-align: center;
+  }
+    .button {
+      display:inline-block;
+      color:#fff;
+      font-weight: bold;
+      background-color:#333;
+      text-align: center;
+      padding:15px 60px;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 5px 5px 0 #bbb;
+      transition: box-shadow .25s;
+  }
+  .button:hover{
+      box-shadow: 0 0 0 #bbb;
+  }
+  .button.button-submition{
+      background: #92d3ca;
+  }
+    
