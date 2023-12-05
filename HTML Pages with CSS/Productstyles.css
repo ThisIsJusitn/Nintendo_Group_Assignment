@@ -92,4 +92,6 @@ width:auto;
 footer {
   background: rgb(227, 22, 22);
   padding: 15px;
+  text-align: center;
+  position: relative;
 }
