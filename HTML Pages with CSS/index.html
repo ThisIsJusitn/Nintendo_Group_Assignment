@@ -2,28 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Page Title and Favicon -->
     <title>Nintendo History</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" alt="images" href="Images/Nintendo4.png">
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
-        <!-- Nintendo Logo -->
         <img src="Images/Nintendo4.png" alt="NintendoLogo" class="logo">
-        
-        <!-- Navigation Menu -->
         <nav>
             <ul>
-                <!-- Navigation Links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="ProductPage.html">Products</a></li>
                 <li><a href="AboutCompany.html">About</a></li>
@@ -32,36 +22,53 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
-
-    <!-- Welcome Section -->
     <section class="welcome-section">
-        <!-- Red Text Background -->
         <div class="red-text-background">
-            <h1>Welcome to Nintendo</h1>
+            <h1>Welcome to Nintendo!</h1>
             <h4><span class="red-text">The History and Future of a company built for fun</span></h4>
-            
-            <!-- Introduction -->
             <p><span class="red-text">Explore the realms and vast life that is Nintendo where the player has the freedom to imagine.
-               From the company that brought players together with products such as the
-               <a href="ProductPage.html">NES</a>, 
-               <a href="ProductPage.html">SNES</a> 
-               and the beloved
-               <a href="ProductPage.html">GameBoy</a>. </span></p>
+                    From the company that brought players together with products such as the
+                    <a href="ProductPage.html">NES</a>,
+                    <a href="ProductPage.html">SNES</a>
+                    and the beloved
+                    <a href="ProductPage.html">GameBoy</a>.</span></p>
         </div>
     </section>
-    
-    <!-- Image Wrapper -->
+
     <div class="wrapper">
         <img src="Images/SuperStar.png" alt="lol">
     </div>
-       
-    <!-- Footer Section -->
+
+    <img src="Images/Luigiwalk.gif" alt="Luigi Walking" class="luigi-walk">
+
     <footer>
-        <!-- Footer Content -->
-        <P>© Nintendo. Games are property of their respective owners. Nintendo of Canada, Ltd. Headquarters are in Vancouver, BC, Canada </P>
+        <p>© Nintendo. Games are property of their respective owners. Nintendo of Canada, Ltd. Headquarters are in Vancouver, BC, Canada ( ͡° ͜ʖ ͡°) </p>
+        <span id="clock"></span>
+        <span id="date"></span>
         <a href="ContactPage.html">Contact us</a>
     </footer>
+
+    <script>
+        // JavaScript for the digital clock and date
+        function updateClockAndDate() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('clock').textContent = timeString;
+
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const dateString = now.toLocaleDateString('en-US', options);
+            document.getElementById('date').textContent = dateString;
+        }
+
+        // Update the clock and date every second
+        setInterval(updateClockAndDate, 1000);
+
+        // Initial call to display the clock and date
+        updateClockAndDate();
+    </script>
 </body>
 
 </html>
