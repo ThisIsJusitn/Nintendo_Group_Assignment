@@ -13,6 +13,20 @@ body {
   background: rgb(227, 22, 22);
   color: rgb(216, 214, 214);
 }
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 10px; /* Round the corners */
+}
+nav a:hover {
+  background-color: rgb(255, 60, 60);
+}
 header {
   background: rgb(227, 22, 22);
   padding: 25px;
