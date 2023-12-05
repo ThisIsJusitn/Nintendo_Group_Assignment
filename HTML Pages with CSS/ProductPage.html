@@ -17,26 +17,15 @@
   <body>
     
     <header>
-      <!--Clock-->
-      <div id="clock"></div>
-      <script>
-          function updateClock() {
-              const now = new Date();
-              const hours = now.getHours().toString().padStart(2, '0');
-              const minutes = now.getMinutes().toString().padStart(2, '0');
-              const seconds = now.getSeconds().toString().padStart(2, '0');
-              document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
-          }
-  
-          setInterval(updateClock, 1000);
-          updateClock(); 
-      </script>
+      
+      
+      <img src="Images/Nintendo4.png" alt="images" height="250" width="350">
       <!--Title of page-->
       <h1>Product</h1>
 
       <!--this will be to change pages-->
 
-
+      
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -80,6 +69,22 @@
       <p>Join the Nintendo Club for exclusive updates, discounts, and more! <a href="#">Sign Up Now</a></p>
       <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
       <p>Stay tuned for the latest news and releases from the world of Nintendo!</p>
+      <!--Clock-->
+      <div id="clock"></div>
+      
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+            }
+    
+            setInterval(updateClock, 1000);
+            updateClock(); 
+        </script>
+
     </footer>
 
    
