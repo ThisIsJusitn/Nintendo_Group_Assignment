@@ -1,3 +1,4 @@
+/* Global styling for the body */
 body {
   background: url('Images/StarPower.png') no-repeat center center fixed;
   background-size: cover;
@@ -8,6 +9,7 @@ body {
   min-height: 100vh;
 }
 
+/* Styling for the header */
 header {
   background: rgb(227, 22, 22);
   padding: 10px 25px;
@@ -17,12 +19,14 @@ header {
   height: 125px;
 }
 
+/* Styling for the logo */
 .logo {
   max-width: 100%;
   height: auto;
   width: 500px;
 }
 
+/* Styling for the navigation */
 nav ul {
   margin: 0;
   padding: 0;
@@ -48,6 +52,7 @@ nav a:hover {
   background-color: rgb(255, 60, 60);
 }
 
+/* Styling for the main heading */
 h1 {
   color: white;
   font-size: 2.5em;
@@ -55,6 +60,7 @@ h1 {
   z-index: 1;
 }
 
+/* Styling for sections */
 section {
   flex: 1;
   display: flex;
@@ -64,6 +70,7 @@ section {
   z-index: 1;
 }
 
+/* Styling for the welcome section and info section */
 section.welcome-section::before,
 footer::before {
   content: '';
@@ -87,6 +94,7 @@ footer::before {
   margin: 35px auto -55px;
 }
 
+/* Styling for the red text background */
 .red-text-background {
   background-color: rgb(227, 22, 22);
   padding: 20px;
@@ -109,6 +117,7 @@ footer::before {
   color: white;
 }
 
+/* Styling for the footer */
 footer {
   background: rgb(227, 22, 22);
   padding: 15px;
@@ -142,6 +151,7 @@ footer::before {
   z-index: -1;
 }
 
+/* Styling for the wrapper */
 .wrapper {
   position: absolute;
   top: 50%;
@@ -154,6 +164,7 @@ footer::before {
   height: auto;
 }
 
+/* Styling for Luigi walking animation */
 .luigi-walk {
   width: 2%;
   height: 45px;

@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
     <title>Nintendo History</title>
+    <!-- External stylesheet link -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" alt="images" href="Images/Nintendo4.png">
-</head>
+    <!-- Favicon for the website -->
+    <link
+      rel="icon"
+      type="image/png"
+      alt="images"
+      href="Images/Nintendo4.png"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- Header section with the Nintendo logo and navigation -->
     <header>
-        <img src="Images/Nintendo4.png" alt="NintendoLogo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ProductPage.html">Products</a></li>
-                <li><a href="AboutCompany.html">About</a></li>
-                <li><a href="ContactPage.html">Contact</a></li>
-            </ul>
-        </nav>
+      <img src="Images/Nintendo4.png" alt="NintendoLogo" class="logo" />
+      <nav>
+        <ul>
+          <!-- Navigation links -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ProductPage.html">Products</a></li>
+          <li><a href="AboutCompany.html">About</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- Welcome section with a red-text background -->
     <section class="welcome-section">
-        <div class="red-text-background">
-            <h1>Welcome to Nintendo!</h1>
-            <h4><span class="red-text">The History and Future of a company built for fun</span></h4>
-            <p><span class="red-text">Embark on an enchanting journey into the expansive universe of Nintendo, a realm where creativity and imagination intertwine seamlessly.
-                Within this gaming haven, Nintendo has been a trailblazer, uniting players through legendary products like the
-                    <a href="ProductPage.html">NES</a>,
-                    <a href="ProductPage.html">SNES</a>
-                    and the cherished
-                    <a href="ProductPage.html">GameBoy</a>.
-                    Delve into the rich tapestry of gaming history, where each console unfolds a narrative of innovation, joy,
-                     and infinite possibilities, inviting you to partake in the ever-evolving adventure of Nintendo's legacy.</span></p>
-        </div>
+      <div class="red-text-background">
+        <!-- Welcome heading and subheading -->
+        <h1>Welcome to Nintendo!</h1>
+        <h4>
+          <span class="red-text"
+            >The History and Future of a company built for fun</span
+          >
+        </h4>
+        <!-- Introduction paragraph with links to product page -->
+        <p>
+          <span class="red-text"
+            >Embark on an enchanting journey into the expansive universe of
+            Nintendo, a realm where creativity and imagination intertwine
+            seamlessly. Within this gaming haven, Nintendo has been a
+            trailblazer, uniting players through legendary products like the
+            <a href="ProductPage.html">NES</a>,
+            <a href="ProductPage.html">SNES</a>
+            and the cherished
+            <a href="ProductPage.html">GameBoy</a>. Delve into the rich tapestry
+            of gaming history, where each console unfolds a narrative of
+            innovation, joy, and infinite possibilities, inviting you to partake
+            in the ever-evolving adventure of Nintendo's legacy.</span
+          >
+        </p>
+      </div>
     </section>
 
+    <!-- Wrapper div with an image -->
     <div class="wrapper">
-        <img src="Images/SuperStar.png" alt="lol">
+      <img src="Images/SuperStar.png" alt="lol" />
     </div>
 
-    <img src="Images/Luigiwalk.gif" alt="Luigi Walking" class="luigi-walk">
+    <!-- Image of Luigi walking -->
+    <img src="Images/Luigiwalk.gif" alt="Luigi Walking" class="luigi-walk" />
 
+    <!-- Footer section with copyright information, clock, date, and contact link -->
     <footer>
-        <p>© Nintendo. Games are property of their respective owners. Nintendo of Canada, Ltd. Headquarters are in Vancouver, BC, Canada ( ͡° ͜ʖ ͡°) </p>
-        <span id="clock"></span>
-        <span id="date"></span>
-        <a href="ContactPage.html">Contact us</a>
+      <p>
+        © Nintendo. Games are property of their respective owners. Nintendo of
+        Canada, Ltd. Headquarters are in Vancouver, BC, Canada ( ͡° ͜ʖ ͡°)
+      </p>
+      <!-- Digital clock and date display -->
+      <span id="clock"></span>
+      <span id="date"></span>
+      <!-- Contact link -->
+      <a href="ContactPage.html">Contact us</a>
     </footer>
 
+    <!-- JavaScript for the digital clock and date -->
     <script>
-        // JavaScript for the digital clock and date
-        function updateClockAndDate() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            const timeString = `${hours}:${minutes}:${seconds}`;
-            document.getElementById('clock').textContent = timeString;
+      // JavaScript function to update the digital clock and date
+      function updateClockAndDate() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        // Update the clock element with the current time
+        document.getElementById("clock").textContent = timeString;
 
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const dateString = now.toLocaleDateString('en-US', options);
-            document.getElementById('date').textContent = dateString;
-        }
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        const dateString = now.toLocaleDateString("en-US", options);
+        // Update the date element with the current date
+        document.getElementById("date").textContent = dateString;
+      }
 
-        // Update the clock and date every second
-        setInterval(updateClockAndDate, 1000);
+      // Update the clock and date every second using setInterval
+      setInterval(updateClockAndDate, 1000);
 
-        // Initial call to display the clock and date
-        updateClockAndDate();
+      // Initial call to display the clock and date when the page loads
+      updateClockAndDate();
     </script>
-</body>
-
+  </body>
 </html>

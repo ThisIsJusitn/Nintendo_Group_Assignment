@@ -1,124 +1,138 @@
-/* javascript here */
+/* JavaScript Styling */
 #clock {
-background: rgb(227, 22, 22);
-color: white;
-}
-
-header {
-background: rgb(227, 22, 22);
-padding: 10px 25px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 125px;
-}
-/* Style for the navigation menu */
-nav ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
-position: relative; /* Make the nav a positioned container */
-z-index: 2; /* Ensure the nav is above the background image */
-}
-
-/* Style for navigation list items */
-nav li {
-display: inline-block;
-margin: 0 10px;
-}
-
-/* Style for navigation links */
-nav a {
-text-decoration: none;
-padding: 10px 20px;
-color: white;
-transition: background-color 0.3s ease;
-border-radius: 10px; /* Round the corners */
-}
-
-/* Hover effect for navigation links */
-nav a:hover {
-background-color: rgb(255, 60, 60);
-}
-
-body {
-background: white;
-color: black;
-font-family: Arial, Helvetica, sans-serif;
-
-margin: 0;
-padding: 0;
-}
-
-h1 {
-color: rgb(216, 214, 214);
-}
-
-/* section list */
-section {
-background: rgb(255, 255, 255);
-padding: 20px;
-display: flex;
-flex-direction: column;
-}
-.section.section-secondary{
-background: white;
-
-}
-
-/* clock with javascript */
-div {
-margin: auto; 
-}
-
-/* footer here */
-footer {
-background: rgb(227, 22, 22);
-padding: 15px;
-}
-
-/* for title */
-.section-headline{
-text-align: center;
-font-size: 45px;
-font-weight: bold;
-color:#333;
-margin: 0 0 20px;
-}
-
-/* form list here */
-.form-table{
-margin: 0 auto;
-}
-.form-table th{
-padding: 10px;
-text-align: left;
-}
-.form-table td{
+    background: rgb(227, 22, 22);
+    color: white;
+  }
+  
+  /* Header Styling */
+  header {
+    background: rgb(227, 22, 22);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+  }
+  
+  /* Navigation Menu Styling */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative; /* Make the nav a positioned container */
+    z-index: 2; /* Ensure the nav is above the background image */
+  }
+  
+  /* Navigation List Item Styling */
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Navigation Link Styling */
+  nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Round the corners */
+  }
+  
+  /* Hover effect for Navigation Links */
+  nav a:hover {
+    background-color: rgb(255, 60, 60);
+  }
+  
+  /* Body Styling */
+  body {
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Title Styling */
+  h1 {
+    color: rgb(216, 214, 214);
+  }
+  
+  /* Section Styling */
+  section {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Secondary Section Styling */
+  .section.section-secondary {
+    background: white;
+  }
+  
+  /* Clock Styling */
+  div {
+    margin: auto;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: rgb(227, 22, 22);
+    padding: 15px;
+  }
+  
+  /* Section Headline Styling */
+  .section-headline {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 20px;
+  }
+  
+  /* Form Table Styling */
+  .form-table {
+    margin: 0 auto;
+  }
+  
+  /* Form Table Header Cell Styling */
+  .form-table th {
     padding: 10px;
-}
-.form-button{
+    text-align: left;
+  }
+  
+  /* Form Table Data Cell Styling */
+  .form-table td {
+    padding: 10px;
+  }
+  
+  /* Form Button Styling */
+  .form-button {
     margin-top: 20px;
     text-align: center;
-}
-
-/* button list */
-.button {
-  display:inline-block;
-  color:#fff;
-  font-weight: bold;
-  background-color:#333;
-  text-align: center;
-  padding:15px 60px;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 0 #bbb;
-  transition: box-shadow .25s;
-}
-.button:hover{
+  }
+  
+  /* Button Styling */
+  .button {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    text-align: center;
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow 0.25s;
+  }
+  
+  /* Hover effect for Button */
+  .button:hover {
     box-shadow: 0 0 0 #bbb;
-}
-.button.button-submition{
+  }
+  
+  /* Submission Button Styling */
+  .button.button-submition {
     background: #92d3ca;
-}
+  }
   

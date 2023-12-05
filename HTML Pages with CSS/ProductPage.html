@@ -4,28 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!----------------------------------------------------------->
-    <!------------This is Product page--------------------------->
-    <!----------------------------------------------------------->
-
-    <!--This is the home page-->
+    <!-- Title of the page -->
     <title>Nintendo History</title>
 
+    <!-- Stylesheet link and favicon -->
     <link rel="stylesheet" href="Productstyles.css" />
-    <link rel="icon" type="image/png" sizes="50x50" href="Images/Nintendo4.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="50x50"
+      href="Images/Nintendo4.png"
+    />
   </head>
+
   <body>
-    
+    <!-- Header section with logo, title, and navigation -->
     <header>
-      
-      
-      <img src="Images/Nintendo4.png" alt="images" height="250" width="350">
-      <!--Title of page-->
+      <img src="Images/Nintendo4.png" alt="images" height="250" width="350" />
       <h1>Product</h1>
-
-      <!--this will be to change pages-->
-
-      
+      <!-- Navigation links -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -36,58 +33,106 @@
       </nav>
     </header>
 
-    <!--Main products-->
-    <section id="featured"> 
-        <h2>Featured Products</h2>
-        <!--NES details-->
-        <div class="product">
-            <h3 class="para">NES Console</h3>
-            <p class="para">Price: $149.99</p>
-            <p class="para">Includes: NES console, 2 controllers, Super Mario Bros. game cartridge.</p>
-            <p class="para">About: The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. The NES can load up your favourite games such as Duck Hunt, Donkey Kong, Zelda, Super Mario Bros and much much more. The NES also has the feature of multiplayer with one other person so you can have fun kicking your friends ass in mario kart.</p>
-            <img src="Images/NES.jpg" alt="images" width="115" height="100" class="para"> 
-        </div>
-        <!--SNES details-->
-        <div class="product">
-            <h3 class="para">SNES Console</h3>
-            <p class="para">Price: $199.99</p>
-            <p class="para">Includes: SNES console, 2 controllers, Super Mario World game cartridge.</p>
-            <p class="para">About: The Super Nintendo Entertainment System, commonly shortened to Super Nintendo, Super NES or SNES, is a 16-bit home video game console developed by Nintendo. You can have fun with the whole family on the SNES as it can have up to 5 controllers. the console is packed fun with all your favourite games like Mario kart, Zelda, Mario,  Star fox, Donkey kong, and much more.</p>
-            <img src="Images/SNES.jpg" alt="images" width="115" height="100" class="para"> 
-        </div>
-        <!--Game Boy details-->
-        <div class="product">
-            <h3 class="para">Game Boy</h3>
-            <p class="para">Price: $89.99</p>
-            <p class="para">Includes: Game Boy console, Tetris game cartridge.</p>
-            <p class="para">About: a groundbreaking handheld console by Nintendo! With its sleek design, vibrant monochrome screen, and compact build, gaming is now anytime, anywhere. Enjoy a library of exciting games, from classics to new releases. The Game Boy is here to redefine portable gaming - grab yours and play on the go!</p>
-            <img src="Images/GameBoy.jpg" alt="images" width="115" height="100" class="para"> 
-        </div>
+    <!-- Main products section -->
+    <section id="featured">
+      <h2>Featured Products</h2>
+
+      <!-- NES product details -->
+      <div class="product">
+        <h3 class="para">NES Console</h3>
+        <p class="para">Price: $149.99</p>
+        <!-- Additional information about the product -->
+        <p class="para">
+          Includes: NES console, 2 controllers, Super Mario Bros. game
+          cartridge.
+        </p>
+        <p class="para">
+          About: The Nintendo Entertainment System (NES) is an 8-bit
+          third-generation home video game console produced by Nintendo...
+        </p>
+        <img
+          src="Images/NES.jpg"
+          alt="images"
+          width="115"
+          height="100"
+          class="para"
+        />
+      </div>
+
+      <!-- SNES product details -->
+      <div class="product">
+        <h3 class="para">SNES Console</h3>
+        <p class="para">Price: $199.99</p>
+        <p class="para">
+          Includes: SNES console, 2 controllers, Super Mario World game
+          cartridge.
+        </p>
+        <p class="para">
+          About: The Super Nintendo Entertainment System, commonly shortened to
+          Super Nintendo, Super NES or SNES, is a 16-bit home video game console
+          developed by Nintendo...
+        </p>
+        <img
+          src="Images/SNES.jpg"
+          alt="images"
+          width="115"
+          height="100"
+          class="para"
+        />
+      </div>
+
+      <!-- Game Boy product details -->
+      <div class="product">
+        <h3 class="para">Game Boy</h3>
+        <p class="para">Price: $89.99</p>
+        <p class="para">Includes: Game Boy console, Tetris game cartridge.</p>
+        <p class="para">
+          About: A groundbreaking handheld console by Nintendo! With its sleek
+          design, vibrant monochrome screen, and compact build, gaming is now
+          anytime, anywhere...
+        </p>
+        <img
+          src="Images/GameBoy.jpg"
+          alt="images"
+          width="115"
+          height="100"
+          class="para"
+        />
+      </div>
     </section>
-    <!--Footer details-->
+
+    <!-- Footer section with additional details and clock -->
     <footer>
-      <p>Join the Nintendo Club for exclusive updates, discounts, and more! <a href="#">Sign Up Now</a></p>
-      <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
-      <p>Stay tuned for the latest news and releases from the world of Nintendo!</p>
-      <!--Clock-->
+      <p>
+        Join the Nintendo Club for exclusive updates, discounts, and more!
+        <a href="#">Sign Up Now</a>
+      </p>
+      <p>
+        Follow us on social media: <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> | <a href="#">Instagram</a>
+      </p>
+      <p>
+        Stay tuned for the latest news and releases from the world of Nintendo!
+      </p>
+      <!-- Clock display -->
       <div id="clock"></div>
-      
-        <script>
-            function updateClock() {
-                const now = new Date();
-                const hours = now.getHours().toString().padStart(2, '0');
-                const minutes = now.getMinutes().toString().padStart(2, '0');
-                const seconds = now.getSeconds().toString().padStart(2, '0');
-                document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
-            }
-    
-            setInterval(updateClock, 1000);
-            updateClock(); 
-        </script>
+      <!-- Script for updating the clock -->
+      <script>
+        function updateClock() {
+          const now = new Date();
+          const hours = now.getHours().toString().padStart(2, "0");
+          const minutes = now.getMinutes().toString().padStart(2, "0");
+          const seconds = now.getSeconds().toString().padStart(2, "0");
+          document.getElementById(
+            "clock"
+          ).textContent = `${hours}:${minutes}:${seconds}`;
+        }
 
+        // Update the clock every second using setInterval
+        setInterval(updateClock, 1000);
+        // Initial call to display the clock when the page loads
+        updateClock();
+      </script>
     </footer>
-
-   
-
   </body>
 </html>

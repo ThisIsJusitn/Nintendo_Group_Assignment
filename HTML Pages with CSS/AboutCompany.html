@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nintendo History</title>
-  <link rel="icon" type="image/png" sizes="50x50" href="Images/Nintendo4.png">
-  <link rel="stylesheet" href="company.css">
-</head>
-<body>
-  <header>
-    <img src="Images/Nintendo4.png" alt="images" height="250" width="350">
-    <nav>
-      <!-- option list here -->
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ProductPage.html">Products</a></li>
-        <li><a href="AboutCompany.html">About</a></li>
-        <li><a href="ContactPage.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- description company here -->
-  <section class="section">
-    <figure class="about">
-        <img src="Images/companyImage.jpg" alt="About image">
-        <figcaption class="about-caption">
-            <h2 class="about-headline">What's Nintendo?</h2>
-            <p class="about-description">
-              Nintendo is a prominent Japanese multinational consumer electronics and video game company. It is one of the most well-known and influential companies in the video game industry. Nintendo was founded on September 23, 1889, originally as a playing card company by Fusajiro Yamauchi. Over the years, it transitioned into various businesses, including a taxi company and a love hotel chain, before eventually finding its niche in the video game industry.
-            </p>
-        </figcaption>
-    </figure>
-</section>
-<footer>
-  <p>Join the Nintendo Club for exclusive updates, discounts, and more! <a href="#">Sign Up Now</a></p>
-  <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
-  <p>Stay tuned for the latest news and releases from the world of Nintendo!</p>
-  <!-- add clock with javascript -->
-  <div id="clock"></div>
-  <script>
-    function updateClock() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const seconds = now.getSeconds().toString().padStart(2, '0');
-        document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
-    }
+  <head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    setInterval(updateClock, 1000);
-    updateClock(); 
-</script>
-</footer>
-</body>
+    <!-- Title of the page -->
+    <title>Nintendo History</title>
+
+    <!-- Favicon and stylesheet link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="50x50"
+      href="Images/Nintendo4.png"
+    />
+    <link rel="stylesheet" href="company.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Nintendo logo -->
+      <img src="Images/Nintendo4.png" alt="images" height="250" width="350" />
+
+      <!-- Navigation menu -->
+      <nav>
+        <ul>
+          <!-- Navigation links -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ProductPage.html">Products</a></li>
+          <li><a href="AboutCompany.html">About</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About section -->
+    <section class="section">
+      <!-- About image and caption -->
+      <figure class="about">
+        <img src="Images/companyImage.jpg" alt="About image" />
+        <figcaption class="about-caption">
+          <!-- About headline -->
+          <h2 class="about-headline">What's Nintendo?</h2>
+
+          <!-- About description -->
+          <p class="about-description">
+            Nintendo is a prominent Japanese multinational consumer electronics
+            and video game company. It is one of the most well-known and
+            influential companies in the video game industry. Nintendo was
+            founded on September 23, 1889, originally as a playing card company
+            by Fusajiro Yamauchi. Over the years, it transitioned into various
+            businesses, including a taxi company and a love hotel chain, before
+            eventually finding its niche in the video game industry.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <!-- Footer content -->
+      <p>
+        Join the Nintendo Club for exclusive updates, discounts, and more!
+        <a href="#">Sign Up Now</a>
+      </p>
+      <p>
+        Follow us on social media: <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> | <a href="#">Instagram</a>
+      </p>
+      <p>
+        Stay tuned for the latest news and releases from the world of Nintendo!
+      </p>
+
+      <!-- Clock display -->
+      <div id="clock"></div>
+
+      <!-- JavaScript for updating the clock -->
+      <script>
+        function updateClock() {
+          const now = new Date();
+          const hours = now.getHours().toString().padStart(2, "0");
+          const minutes = now.getMinutes().toString().padStart(2, "0");
+          const seconds = now.getSeconds().toString().padStart(2, "0");
+          document.getElementById(
+            "clock"
+          ).textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+      </script>
+    </footer>
+  </body>
 </html>
